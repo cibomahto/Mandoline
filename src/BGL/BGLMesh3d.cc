@@ -6,6 +6,9 @@
 //  Copyright 2010 Belfry Software. All rights reserved.
 //
 
+#include <cstdio>
+#include <strings.h>
+
 #include "BGLMesh3d.h"
 #include "BGLPoint3d.h"
 #include "BGLLine.h"

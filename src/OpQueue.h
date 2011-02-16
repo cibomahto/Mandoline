@@ -3,6 +3,7 @@
 
 #include <list>
 #include <pthread.h>
+#include <stdint.h>
 
 class OpThread;
 class Operation;

@@ -1,4 +1,6 @@
+#include <cstdio>
 #include <unistd.h>
+#include <stdlib.h>
 #include <getopt.h>
 #include "Defaults.h"
 #include "Stopwatch.h"
@@ -92,7 +94,7 @@ int main (int argc, char * const argv[])
     ctx.loadDefaultsFromFile(buf);
 
     // Process remainder of command-line arguments.
-    optreset = opterr = optind = 1;
+    opterr = optind = 1;
     while ((ch = getopt_long(argc, argv, shortopts, longopts, NULL)) != -1) {
         switch (ch) {
         case 'c':
